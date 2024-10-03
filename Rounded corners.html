@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rounded corners</title>
+        <style>
+            #c1{
+                background-color: aqua;
+                border-radius: 25px;
+               width: 200px;
+               height: 150px;
+               text-align: center;
+               
+            }
+            #c2{
+                background-color: transparent;
+                border-radius: 25px ;
+                color: aqua;
+                border: 2px solid currentColor;
+                width: 200px;
+                height: 150px;
+                text-align: center;
+            }
+            #c3{
+                
+                background: url(./images/indain\ melodies.jpg);
+                width: 100px;
+                height: 100px;
+                background-size: cover;
+                background-repeat:no-repeat;
+            }
+            #example1 {
+             border: 10px dotted black;
+             padding: 35px;
+             background: yellow;
+             background-color: transparent;
+            }
+
+           #example2 {
+             border: 10px dotted black;
+             padding: 35px;
+             background: yellow;
+             background-clip: padding-box;
+            }
+
+         #example3 {
+             border: 10px dotted black;
+             padding: 35px;
+             background: yellow;
+             background-clip: content-box;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <p id="c1">This is rounded corner</p>
+        <p id="c2">Rounded corner</p>
+        <p id="c3">this</p>
+        <h1>The background-clip Property</h1>
+
+     <p>No background-clip (border-box is default):</p>
+      <div id="example1">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+
+      <p>background-clip: padding-box:</p>
+        <div id="example2">
+         <h2>Lorem Ipsum Dolor</h2>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+       </div>
+
+      <p>background-clip: content-box:</p>
+       <div id="example3">
+          <h2>Lorem Ipsum Dolor</h2>
+           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+    </body>
+</html>
