@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Effects</title>
+        <style>
+            #text1{
+                width: 200px;
+                overflow: hidden;
+                text-overflow: clip;
+                border: 1px solid black;
+                white-space: nowrap;
+            
+            }
+            p #text1{
+                writing-mode: horizontal-tb;
+            }
+            #text2{
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border: 1px solid black;
+                white-space: nowrap;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h2>Text overflow by using clip</h2>
+        <p id="text1">This is some long text that will not fit in the box</p>
+        <h2>Text overflow by using ellipse</h2>
+        <p id="text2">This is some long text that will not fit in the box</p>
+        
+        
+
+    </body>
+</html>

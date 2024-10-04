@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradient</title>
+        <style>
+            #grad1{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(red,yellow);
+            }
+            #grad2{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to right,red,yellow);
+            }
+            #g1{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(0deg,red,yellow);
+            }
+            #g2{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(90deg,red,yellow);
+            }
+            #g3{
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(180deg,red,yellow);
+            }
+            #g4{
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                background-image: radial-gradient(red,yellow,green);
+            }
+            #g5{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: radial-gradient(closest-side at 60% 55%,red,yellow,green);
+            }
+            #g6{
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                background-image: conic-gradient(red,yellow,green);
+            }
+            #g7{
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                background-image: conic-gradient(from 90deg,red,yellow,green);
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Linear gradient Top-bottom</h2>
+        <p id="grad1"></p>
+        <h2>Linear Gradient right</h2>
+        <div id="grad2"></div>
+        <h1>Gradients by using Different Angles</h1>
+        <div id="g1" style="text-align: center;">0deg</div><br>
+        <div id="g2" style="text-align: center;">90deg</div><br>
+        <div id="g3" style="text-align: center;">180deg</div><br>
+        <h2>Radial Gradient</h2>
+        <div id="g4">Radial</div>
+        <h2>Radial Gradient by using different size</h2>
+        <div id="g5">closest-side</div>
+        <h2>conic Gradient</h2>
+        <div id="g6">Conic Gradient</div>
+        <h2>conic gradient with a from angle</h2>
+        <div id="g7">Conic Gradient</div>
+    </body>
+</html>
