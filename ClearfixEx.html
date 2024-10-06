@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClearfixExample</title>
+        <style>
+            div{
+                border: 2px solid palevioletred;
+            }
+            img{
+                float: right;
+            }
+            .img2{
+                float: right;
+            }
+            .clearfix{
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Without Clearfix</h2>
+        <div>
+            <img src="./images/c1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+        <h2>With clearfix</h2>
+        <div class="clearfix">
+            <img class="img2" src="./images/computer.jpeg" width="100px" height="100px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+    </body>
+</html>
