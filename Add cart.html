@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+             .fa-trash {
+            cursor: pointer;
+            color: red;
+            margin-right: 10px;
+            }
+            .shopping-cart img {
+            width: 100px;
+            margin-right: 10px;
+            background-position: center;
+        }
+        .fa-shopping-cart {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .shopping-cart h2 {
+            margin-top: 0;
+        }
+        .shopping-cart .box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .shopping-cart {
+            position: fixed;
+            top: 50;
+            right:50; /* Initially offscreen */
+            width: 300px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            
+            padding: 15px;
+            
+        }
+       
+        </style>
+    </head>
+    <body>
+        <div class="shopping-cart">
+            
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="./images/f1.png">
+                <div class="content">
+                  <h3>Cabbage</h3>
+                  <span class="price">$5.99/-</span>
+                  <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="./images/orange.png">
+                    <div class="content">
+                      <h3>Cabbage</h3>
+                      <span class="price">$5.99/-</span>
+                      <span class="quantity">Qty : 1</span>
+                    </div>
+                </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="./images/prodcuts2.png">
+                        <div class="content">
+                          <h3>Cabbage</h3>
+                          <span class="price">$5.99/-</span>
+                          <span class="quantity">Qty : 1</span>
+                        </div>
+                    </div>
+            
+    </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online grocery</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+        <style>
+          .btn{
+            border: 2px solid;
+            justify-content: center;
+            margin: 2%;
+            font-size: 1.5rem;
+            
+
+          }
+          .btn:hover{
+            background-color: green;
+          }
+           .fa-shopping-basket{
+            font-size: 50px;
+           }
+           *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+           }
+           .header{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            border: 2px solid;
+            justify-content: space-between;
+            padding: 15px 5%;
+            background-color: #fff;
+            box-shadow: grey;
+           }
+           .logo{
+            width: 20%;
+            height: 20%;
+           }
+           .header .logo i{
+             color: green;
+           }
+           .header .navbar a{
+             font-size: 1.7rem;
+             margin: 0 1rem;
+             color: black;
+           }
+           .header .navbar a:hover{
+            color: green;
+           }
+           .header .icons div{
+            border: 1px solid;
+            width: 4.5rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            border-radius: .5rem;
+            background-color: grey;
+            color: black;
+            font-size: 2rem;
+            text-align: center;
+            margin-right: 3rem;
+            cursor: pointer;
+           
+           }
+           .header .icons div:hover{
+            background-color: green;
+            color: white;
+           }
+           .header .search-form{
+            
+            border: 1px solid;
+            position: absolute;
+            top: 110%;
+            right: 0; /* Adjust this to position the search bar */
+            width: 0; /* Start with width 0 */
+            height: 3rem;
+            background-color: #fff;
+            border-radius: .5rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s ease;
+            opacity: 0; /* Start hidden */
+        }
+        .search-form.active {
+            width: 50rem; /* Expand width on active */
+            opacity: 1; /* Make it visible */
+        }
+
+        .search-form input {
+            height: 100%;
+            width: 100%;
+            padding: 1rem;
+            border: none; /* Remove border from input */
+            outline: none; /* Remove outline */
+        }
+
+        .search-form label {
+            padding-right: 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+        }  
+           
+           
+           .header .search-form label:hover{
+            color:green
+           }
+           
+           .login-container {
+    position: relative;
+}
+.search-form input[type="search"] {
+    width: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: width 0.4s ease;
+}
+
+.search-icon:focus-within + .search-form input[type="search"],
+.search-form input[type="search"]:focus {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+section{
+  padding: 2rem 9%;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  background: url(./images/fruits\ and\ vegetables.png) no-repeat ;
+  background-position: left;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-size: 15%;  
+}
+button:hover{
+  background-color: green;
+}
+.home .content p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+.heading{
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  color: black;
+}    
+
+.features .box-container{
+               border: 0px solid;
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(25rem, 0.5fr));
+               gap: 1rem;
+
+            }
+            .features .box-container .box{
+                border: 0px solid red;
+                padding: 3rem 2rem;
+                background-color: #fff;
+                outline:offset;
+                outline-offset: -1rem;
+                text-align: center;
+                box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+            }
+           .features .box-container .box:hover{
+                 box-shadow: 2px 2px 2px 2px green;
+            }
+ </style>
+    </head>
+    <body>
+        <!--header section-->
+       <header class="header">
+           <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Grocery</a>
+          <nav class="navbar">
+              <a href="index.html">Home</a>
+              <a href="product.html">Product</a>
+              <a href="Categories.html">Categories</a>
+              <a href="Add cart.html">Cart</a>
+           </nav>
+           <div class="icons">
+           <!-- <div class="fa fa-bars"></div>-->
+            <div class="fa fa-search"></div>
+            <div class="fa fa-shopping-cart"></div>
+            <div class="fa fa-user"></div>
+           </div>
+           <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here" name="">
+            <label for="search-box" class="fa fa-search" ></label>
+           </form>
+       </header>
+       <!--Banner section-->
+       <section class="home">
+        <div class="content" style="justify-content: center;">
+        <h3 >Fresh And <span style="color: green;">Organic</span> products For you</h3>
+        <p>Grown without synthetic pesticides or GMOs, our produce is fresher, tastier, and better for the planet. 
+        </p>
+         <button style="width: 10%; height: 40%;">Shop Now</button>
+        </div>
+       </section>
+       <!--feature section-->
+       <section class="features">
+        <h1 class="heading"></h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="./images/f1.png" style="width: 50%;">
+            <h3>Fresh And Organic</h3>
+            <p>Fresh,nature's sweetest gift for your health</p>
+            <a href="products.html" class="btn">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./images/orange.png" style="width: 50%;">
+            <h3>Fresh Orange</h3>
+            <p>Oranges are juicy, sweet citrus fruits </p>
+            <a href="products.html" class="btn">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./images/p3.png" style="width: 70%;">
+            <h3>Fresh Fish</h3>
+            <p>Fish are versatile, nutrient-rich sources of protein</p>
+            <a href="products.html" class="btn">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./images/p4.jpg" style="width: 70%;">
+            <h3>Fresh Cabbage</h3>
+            <p>Cabbage is a leafy green vegetable</p>
+            <a href="products.html" class="btn">Read More</a>
+        </div>
+        <div class="box">
+          <img src="./images/prodcuts2.png" style="width: 70%;">
+          <h3>Fresh Onion</h3>
+          <p>Onions are pungent, versatile vegetables </p>
+          <a href="products.html" class="btn">Read More</a>
+        </div>
+          <div class="box">
+            <img src="./images/p7.png" style="width: 70%;">
+            <h3>Vegetables</h3>
+            <p>Vegetables are nutrient-dense foods</p>
+            <a href="products.html" class="btn">Read More</a>
+          </div>
+       </section>
+       
+
+       
+       
+    </body>
+</html>
