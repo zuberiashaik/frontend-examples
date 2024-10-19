@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parameter functions</title>
+        <script>
+            function name(fname,lname) {
+                document.write(fname + lname +"<br>");
+            }
+            function sum(a,b) {
+                var c = a + b;
+                document.write(c + "<br>");
+            }
+            //named functions
+            var namedsum = function add(a,b) {
+                return  a + b;
+                
+            }
+           
+           name("You","Tube");
+           sum(10,20);
+          document.write(namedsum(22,33));
+        </script>
+    </head>
+</html>
