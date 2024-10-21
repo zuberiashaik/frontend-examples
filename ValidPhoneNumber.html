@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valid Phone Number</title>
+        <script>
+            function ValidPhone(phn) {
+                const phnRegex = /^[6-9]\d{9}$/;
+                if (phnRegex.test(phn)) {
+                alert(`"${phn}" is a valid phone number.`);
+            } else {
+                alert(`"${phn}" is not a valid phone number.`);
+            }
+        }
+            const phn = prompt("Enter a phone number");
+            ValidPhone(phn);
+
+        </script>
+    </head>
+</html>

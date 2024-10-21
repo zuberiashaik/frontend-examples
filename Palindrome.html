@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome </title>
+        <script>
+            function isPalindrome(str) {
+                // find the length of a string
+               const len = str.length;
+
+                // loop through half of the string
+                for (let i = 0; i < len / 2; i++) {
+                    
+                 // check if first and last string are same
+                if (str[i] !== str[len - 1 - i]) {
+                alert("It is not a palindrome");
+                 }
+               }
+               alert("It is a palindrome");
+                }
+            
+            const str = prompt("Enter a String");
+            isPalindrome(str);
+        </script>
+    </head>
+</html>
