@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <script>
+            function hello() {
+                alert("Helloooooooo");
+            }
+            function displayDate() {
+                document.write(Date()); //here we are using date() it represents the current date 
+            }
+            function uppercase() {
+                const x = document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="hello()">Click Me</button>
+        <button onclick="displayDate()">This time is?</button><br>
+        Enter your Name : <input type="text" id="fname"oninput="uppercase()"><br>
+        <button onmouseover="hello()">OnmouseOver</button><br>
+        <button onmouseout="hello()">onmouseout</button>
+    </body>
+</html>
