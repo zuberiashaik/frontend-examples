@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+        <script>
+            var arr = [10,20,30,40];
+            document.write(arr[3] + "<br>"); //here we are directly giving the index to know the element
+
+            //perfoming the loop to print all the elements
+            for(var i = 0; i < 4; i++) {
+                document.write(arr[i] + "<br>");
+            }
+            //tostring method
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.write(fruits.toString() + "<br>");
+             fruits.push("Lemon"); //we are adding one more element to fruits it will be added at the last
+             document.write(fruits + "<br>");
+            document.write(fruits.length + "<br>"); //length method is used to return the length of an array
+            document.write(Array.isArray(fruits));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
