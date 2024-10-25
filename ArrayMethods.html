@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Methods</title>
+        <script>
+            const arr = ["Banana","Apple","Orange","Papaya"];
+            document.write(arr + "<br>");
+            document.write(arr.join("*") + "<br>");
+            document.write(arr.pop() + "<br>");  //here pop method removes the last element from an array
+            arr.push("Kiwi"); //it adds an element at the end
+            document.write(arr + "<br>");
+            arr.shift(); // shift method removes the first element
+            document.write(arr + "<br>");
+            arr.unshift("Lemon"); //it adds element at the begining
+            document.write(arr + "<br>");  
+            document.write(arr.copyWithin(2,0) + "<br>");
+            document.write(arr.indexOf("Apple") + "<br>"); //it returns the position of the elements
+            document.write(arr.includes("Apple") + "<br>"); //it returns true if the element is present otherwise false
+            document.write(arr.sort() + "<br>"); //it returns elements in alphabetically
+            document.write(arr.reverse() + "<br>");
+
+            const points = [40, 100, 1, 5, 25, 10];
+            document.write(points.Math.min);
+            
+
+            //merging of arrays
+            const array1 = ["Cecilie", "Lone"];
+            const array2 = ["Emil", "Tobias", "Linus"];
+            document.write(array1.concat(array2)); // it merges the 2 arrays
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
