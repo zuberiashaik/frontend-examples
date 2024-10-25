@@ -1,52 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>StudentRegistrationForm</title>
-        <style>
-            h1{
-                text-align: center;
-            }
-            div{
-                text-align: center;
-            }
-            input {
-                border: 2px solid;
-                padding: 5px;
-                margin: 5px;
-                
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Registration Form</h1>
-        <form>
-
-       
-        <div>
-        <label>Name:</label>
-        <input type="text" placeholder="Enter Student Name"><br>
-        <label>Email:</label>
-        <input type="email" placeholder="Enter your email"><br>
-        <label>Date Of Birth:</label>
-        <input type="date" placeholder="Enter your date of birth"><br>
-        <label>Gender:</label>
-        <input type="radio">Male
-        <input type="radio">Female
-        <br>
-        <label>Course:</label>
-        <select>
-            <option>Computer Science</option>
-            <option>Mathematics</option>
-            <option>Economics</option>
-            <option>Physics</option>
-            <option>Chemistry</option>
-            
-        </select>
-        <br><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
         
-    </div>
-</form>
-    </body>
+    </style>
+    <script>
+        function Validation() {
+            const name = document.myForm.name.value.trim();
+            const email = document.myForm.email.value.trim();
+            const password = document.myForm.password.value;
+            const confirmedPassword = document.myForm.confirmedPassword.value;
+
+            // Validate Name
+            if (name === "") {
+                alert("Please provide your name.");
+                return false;
+            } else if (/^[0-9]/.test(name)) { // Check if the name starts with a digit
+                alert("Name must start with a letter.");
+                return false;
+            } else if (!/^[a-zA-Z\s]+$/.test(name)) { // Check if it contains only letters and spaces
+                alert("Name can only contain letters and spaces.");
+                return false;
+            }
+
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "") {
+                alert("Please provide your email.");
+                return false;
+            } else if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Validate Password
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            // Validate Confirmed Password
+            if (confirmedPassword !== password) {
+                alert("Passwords do not match.");
+                return false;
+            }
+        
+            return true; // All validations passed
+        }
+    </script>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form name="myForm" onsubmit="return Validation();">
+        <label>Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label>Confirmed Password:</label>
+        <input type="password" id="confirmedPassword" name="confirmedPassword">
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
 </html>
