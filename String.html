@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strings</title>
+        <script>
+            var n1 = "It is always right";
+            var n2 = 'String Literals';
+            var n3 = `It is a string template`;
+            var n4 = `It allows 'single' and "double" quotes inside string`;
+            document.write(n1 + "<br>");
+            document.write(n2 + "<br>");
+            document.write(n3 + "<br>");
+            document.write(n4 + "<br>");
+            document.write(n1.length + "<br>");
+            let char = n1.charAt(4);
+            document.write(char + "<br>");
+            document.write(n2.slice(7) + "<br>"); // it starts from the index 7 and returns the entire word
+            document.write(n2.slice(-14) + "<br>");
+            document.write(n2.substr(7,4) + "<br>");
+            document.write(n1.concat(n2) + "<br>");
+            var n5 = "Hello World        ";
+            document.write(n5.trim() + "<br>");
+            document.write(n5.trimStart() + "<br>");
+            document.write(n5.repeat(2) + "<br>"); // it repeats the string 2times
+            document.write(n5.replace("World", "World!") + "<br>");
+            document.write(n5.indexOf("Hello") + "<br>");
+            document.write(n5.startsWith("Hello") + "<br>");
+        </script>
+    </head>
+</html>
