@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set Methods</title>
+        <script>
+            const letters = new Set(["a","b","c"]);
+            document.write("The set has "  + letters.size + " values <br>");
+            letters.add("r");
+            letters.add("w");
+            document.write("The set has "  + letters.size + " values <br>");
+            const ans = letters.entries();
+            let text = "";
+            for (const entry of ans) {
+            text += entry + "<br>";
+            }
+
+            document.write(text + "<br>");
+            if (letters.has(prompt("Enter a letter"))) { 
+                alert("selected letter is present in the letters");
+            } else {
+                alert("Please select a proper letter");
+            } 
+            
+        </script>
+    </head>
+</html>

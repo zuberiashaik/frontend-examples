@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps</title>
+        <script>
+            const fruits = new Map([["apples",200],["bananas",150],["oranges",100]]);
+            document.write("There are " + fruits.size + " fruits <br>" );
+            fruits.set("apples", 400);
+
+           let numb = fruits.get("apples");
+           document.write("There are " + numb + " apples <br>");
+           document.write(fruits.get("bananas") + "<br>"); //here get method  returns the value of a key
+           document.write(fruits.delete("oranges") + "<br>");
+           document.write(fruits.size + "<br>");
+           let text = "";
+            for (const x of fruits.keys()) {
+            text += x + "<br>";
+           }
+           document.write(text + "<br>");
+           let t = "";
+           for (const x of fruits.values()) {
+           t += x + "<br>";
+            }
+            document.write(t);
+         </script>
+    </head>
+</html>
