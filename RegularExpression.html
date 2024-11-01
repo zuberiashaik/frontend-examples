@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <script>
+            let text = "Java Script";
+            let t = "123456789";
+            let text1 = "HELLO, LOOK";
+            document.write(text.search("Script") + "<br>");
+            document.write(text.replace("Script","ECMA") + "<br>");
+            document.write(text.search(/script/i) +"<br>");
+            document.write(text.match(/[a]/g) + "<br>");
+            document.write(t.match(/[1-3]/g) + "<br>");
+            const pattern = /a/;
+            document.write(pattern.test(text));
+        </script>
+    </head>
+</html>
