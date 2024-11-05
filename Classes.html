@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JavaSCript Classes
+        </title>
+        <script>
+            class car {
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+                displayCar() { //by using methods
+                    document.write(`product name: ${this.name}`);
+                }
+            }
+            const c = new car("Ford", 2014)
+          //  document.write(c.name + " " + c.year);
+          c.displayCar();
+        </script>
+    </head>
+</html>
