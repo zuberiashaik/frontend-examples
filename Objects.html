@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Objects</title>
+        <script>
+            //by using object literals
+            const person = {};
+            person.firstName = "john";
+            person.lastName = "Doe";
+            document.write(person.firstName + " " + person.lastName + "<br>");
+            //by using new Object
+            const person1 = new Object();
+            person1.firstName = "john";
+            person1.lastName = "Doe";
+            document.write(person1.firstName + " " + person1.lastName + "<br>");
+
+            //by using object constructor function
+            function Person2(first,last,age) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+            }
+            const myPerson = new Person2("john", "Doe", 30);
+            document.write(myPerson.firstName + " " + myPerson.lastName + " " + myPerson.age);
+        </script>
+    </head>
+</html>
